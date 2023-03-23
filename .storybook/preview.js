@@ -1,9 +1,12 @@
+import '../src/index.css';
+
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
-  },
+	// parameters use to control behavior or Storybook features
+	actions: { argTypesRegex: '^on[A-Z].*' }, // mock callbacks
+	controls: {
+		matchers: {
+			color: /(background|color)$/i,
+			date: /Date$/,
+		},
+	},
 };
